@@ -51,3 +51,7 @@ LoadBalancer service exposes your application externally using a cloud providerâ
 
 
 <img width="1071" height="768" alt="image" src="https://github.com/user-attachments/assets/55a8a798-a86e-4c1c-b2e2-4ca75b1e804d" />
+
+
+
+<img width="767" height="787" alt="image" src="https://github.com/user-attachments/assets/dbc5db63-0fc0-417c-9344-d1975e8024c6" />
