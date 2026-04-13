@@ -47,3 +47,7 @@ spec:
 
 Explanation:
 LoadBalancer service exposes your application externally using a cloud provider’s load balancer (like AWS, Azure, GCP). It automatically creates an external IP address and distributes traffic across Pods. This is commonly used in production environments.
+
+
+
+<img width="1071" height="768" alt="image" src="https://github.com/user-attachments/assets/55a8a798-a86e-4c1c-b2e2-4ca75b1e804d" />
