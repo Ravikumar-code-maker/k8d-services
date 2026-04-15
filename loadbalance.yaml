@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-loadbalancer-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-app   # This should match your pod labels
+  ports:
+    - protocol: TCP
+      port: 80        # External port (client will access this)
+      targetPort: 8080  # Pod container port
