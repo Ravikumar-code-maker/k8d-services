@@ -1,1 +1,31 @@
+apiVersion: networking.k8s.io/v1   # API version for Ingress resource
+kind: Ingress                      # We are creating an Ingress object
+
+metadata:
+  name: my-ingress                 # Name of the Ingress
+
+spec:
+  rules:                           # Rules define how traffic is routed
+
+    - host: myapp.com              # Domain name المستخدم will access
+      http:                        # HTTP routing rules
+
+        paths:
+          - path: /app1            # URL path (example: myapp.com/app1)
+            pathType: Prefix       # Matches all requests starting with /app1
+
+            backend:               # Where to send the traffic
+              service:
+                name: app1-service # Service name (must already exist)
+                port:
+                  number: 80       # Service port
+
+          - path: /app2            # Another path (myapp.com/app2)
+            pathType: Prefix       # Same prefix matching rule
+
+            backend:
+              service:
+                name: app2-service # Second service
+                port:
+                  number: 80       # Service port
 
